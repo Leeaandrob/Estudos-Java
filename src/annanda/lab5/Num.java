@@ -6,7 +6,7 @@ public class Num implements Expressao {
 	public Num() {
 	}
 
-	Num(double numeral){
+	public Num(double numeral){
 		this.numeral = numeral;
 	}
 
