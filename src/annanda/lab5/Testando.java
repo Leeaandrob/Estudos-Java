@@ -13,7 +13,8 @@ public class Testando {
 		Var fat = new Var("fat");
 		
 		x.valor = new LeNumero().valor();
-		System.out.println("x:"+x.valor);
+		new Imprime(x);
+//		System.out.println("x:"+x.valor);
 
 		
 	}
