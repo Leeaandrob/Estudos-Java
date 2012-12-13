@@ -19,7 +19,7 @@ public class If implements Comando {
 	@Override
 	public void executa() {
 		//teste
-		if(this.expIf.valor() == 0){
+		if(this.expIf.valor() == 1){
 			//cmdThen
 			this.cmdThen.executa();
 		}
