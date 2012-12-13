@@ -5,8 +5,8 @@ public class Imprime implements Comando {
 	public Imprime() {
 	}
 
-	public Imprime(Var variavel) {
-		System.out.println(variavel.valor());
+	public Imprime(Expressao expressao) {
+		System.out.println(expressao.valor());
 	}
 	
 

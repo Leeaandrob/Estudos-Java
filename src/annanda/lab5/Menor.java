@@ -2,13 +2,13 @@ package annanda.lab5;
 
 public class Menor implements Expressao {
 	
-	public double esquerda;
-	public double direita;
+	public Expressao esquerda;
+	public Expressao direita;
 
 	public Menor() {
 	}
 
-	public Menor(double esquerda, double direita) {
+	public Menor(Expressao esquerda, Expressao direita) {
 		super();
 		this.esquerda = esquerda;
 		this.direita = direita;
@@ -16,7 +16,7 @@ public class Menor implements Expressao {
 
 	@Override
 	public double valor() {
-		if(this.esquerda < this.direita)
+		if(this.esquerda.valor() < this.direita.valor())
 			return 1;
 		else 
 			return 0;

@@ -2,13 +2,13 @@ package annanda.lab5;
 
 public class Mul implements Expressao {
 	
-	public double esquerda;
-	public double direita;
+	public Expressao esquerda;
+	public Expressao direita;
 
 	public Mul() {
 	}
 
-	public Mul(double esquerda, double direita) {
+	public Mul(Expressao esquerda, Expressao direita) {
 		super();
 		this.esquerda = esquerda;
 		this.direita = direita;
@@ -16,7 +16,7 @@ public class Mul implements Expressao {
 
 	@Override
 	public double valor() {
-		return this.esquerda * this.direita;
+		return this.esquerda.valor() * this.direita.valor();
 	}
 
 }
