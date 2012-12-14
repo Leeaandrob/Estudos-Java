@@ -9,17 +9,19 @@ public class If implements Comando {
 	}
 	
 
-	public If(Expressao expIf, Comando cmdElse, Comando cmdThen) {
+	public If(Expressao expIf, Comando cmdThen, Comando cmdElse) {
 		this.expIf = expIf;
-		this.cmdElse = cmdElse;
 		this.cmdThen = cmdThen;
+		this.cmdElse = cmdElse;
 	}
 
 
 	@Override
 	public void executa() {
+
 		//teste
 		if(this.expIf.valor() == 1){
+
 			//cmdThen
 			this.cmdThen.executa();
 		}

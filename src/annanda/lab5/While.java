@@ -16,6 +16,7 @@ public class While implements Comando {
 
 	@Override
 	public void executa() {
+
 		//condicao
 		while(this.expIf.valor() ==1){
 			this.comando.executa();
